@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO </title>
+
+    <style>
+        #inpKey,#btnInsert{
+            padding: 7px;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        fieldset{
+            margin-bottom: 5px;
+        }
+
+        #item{
+            /* border: solid 1px gray; */
+            margin: 5px;
+            padding: 7px;
+            font-weight: 600;
+            background-color: rgb(160, 168, 168);
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #item button{
+            background-color: red;
+            padding: 5px 10px;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+        }
+
+        h2{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Muzahidul Islam </h2>
+    <hr >
+
+   <fieldset>
+   <legend>Insert Data</legend>
+   <input type="text" id="inpKey" placeholder="Add item ...">
+   <!-- <input type="text" id="inpValue" placeholder="Enter Value..."> -->
+    <button id="btnInsert"> Add Item </button>
+   </fieldset>
+
+
+
+   <fieldset>
+    <legend>Local Storage </legend>
+    <div id="lsOutput">
+
+    </div>
+   </fieldset>
+
+<button id="clear">Clear Data </button>
+</body>
+
+<script src="/app.js"></script>
+
+
+</html>
